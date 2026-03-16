@@ -1,4 +1,4 @@
-# [M2 QDCS] GPU programming (2.5 ECTS)
+# [APP5] GPU programming (2.5 ECTS)
 
 This course offers a practical introduction to GPU programming, focusing on the principles and techniques behind parallel computation using the CUDA programming model. Students will explore how modern GPUs execute thousands of threads concurrently, how memory hierarchies affect performance, and how to design efficient kernels for tasks such as matrix computations, scientific computing, and machine-learning-related operations. Through a blend of lectures, hands-on examples, and targeted programming assignments, the course builds core skills in parallel algorithm design and performance optimization, preparing students to create high-performance GPU-accelerated applications and use existing optimized GPU libraries.
 
@@ -33,6 +33,10 @@ At the end of weeks 3, 4, 5, 6 there will be mini-exams of 20-25 minutes, giving
 **Code deciphering:** Given a complete GPU code (with anonymized variable names), understand and explain what the code actually computes.
 
 You can bring **four** A4 sheets to the mini-exam (both sides); no other material is allowed.
+
+The mini-exam of week n will cover the material up to (including) week n - 1 (e.g., first mini-exam will be on the material of first two weeks).
+
+Lab sessions will not be graded; so please do not use AI tools for programming assignments -- you will get a fish for the day but will not learn how to fish for later.
 
 # Technical tips
 
