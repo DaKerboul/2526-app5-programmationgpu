@@ -24,7 +24,7 @@ int main(int argc, char **argv)
   int blockSize = 128;
   int numBlocks = N / blockSize;
   if (N % blockSize) numBlocks++;
-  multiplyArray<<<(numBlocks, blockSize>>>(n, c); 
+  multiplyArray<<<numBlocks, blockSize>>>(N, c); 
   // Recopier le tableau multiplie vers le CPU
   cudaMemcpyFromSymbol(A, dA, N * sizeof(float), 0,
       cudaMemcpyDeviceToHost);

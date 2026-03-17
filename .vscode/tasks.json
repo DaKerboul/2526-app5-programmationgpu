@@ -1,0 +1,39 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile CUDA (current file)",
+      "type": "shell",
+      "command": "nvcc",
+      "args": [
+        "-g",
+        "-G",
+        "-arch=sm_86",
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$nvcc"],
+      "detail": "Compile le fichier .cu actif avec nvcc (RTX 3080 Ti = sm_86)"
+    },
+    {
+      "label": "Compile CUDA (optimisé)",
+      "type": "shell",
+      "command": "nvcc",
+      "args": [
+        "-O3",
+        "-arch=sm_86",
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}"
+      ],
+      "group": "build",
+      "problemMatcher": ["$nvcc"],
+      "detail": "Compile sans symboles debug, optimisé"
+    }
+  ]
+}

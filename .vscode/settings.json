@@ -1,0 +1,15 @@
+{
+  "files.associations": {
+    "*.cu": "cuda-cpp",
+    "*.cuh": "cuda-cpp"
+  },
+  "editor.formatOnSave": true,
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "clangd.arguments": [
+    "--background-index",
+    "--clang-tidy",
+    "--header-insertion=never",
+    "--compile-commands-dir=build",
+    "--query-driver=C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/**/nvcc.exe,C:/Program Files (x86)/Microsoft Visual Studio/**/cl.exe,C:/Program Files/Microsoft Visual Studio/**/cl.exe"
+  ]
+}

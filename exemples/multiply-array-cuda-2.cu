@@ -20,7 +20,7 @@ int main(int argc, char **argv)
   // Copier le tableau vers le GPU
   cudaMemcpyToSymbol(dA, A, N * sizeof(float), 0,
       cudaMemcpyHostToDevice);
-  multiplyArray<<<N, 1>>>(n, c); 
+    multiplyArray<<<N, 1>>>(N, c); 
   // Recopier le tableau multiplie vers le CPU
   cudaMemcpyFromSymbol(A, dA, N * sizeof(float), 0,
       cudaMemcpyDeviceToHost);
